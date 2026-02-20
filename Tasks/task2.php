@@ -21,3 +21,16 @@ function fibonacci()
 }
 
 fibonacci();
+
+
+// As a recursive function
+function fib($number1 = 0, $number2 = 1)
+{
+    echo $number1 . ", ";
+    if ($number1 >= 34) {
+        return;
+    }
+    fib($number2, $number1 + $number2);
+}
+
+fib();
